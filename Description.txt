@@ -1,0 +1,18 @@
+ Intro: Happiness surveys are used to measure a person's subjective well-being or level of happiness.
+ 	These surveys often include questions about overall life satisfaction, positive and negative emotions, and the presence of specific positive and negative life events. They can be used in both research and practical settings,
+ 	such as in the workplace or in schools, to assess the overall well-being of a group of people and identify areas for improvement. 
+
+Solution: I have developed a web-based application. At, backend I am using spring-boot and at front-end I am using angular and boostrap,
+	  for storing data I have used relation database that is SQL.
+
+	  first I developed entity of question which conatains the list of question from 1-5, then I have make repository by extending JPA repository
+	  Jpa repository will provide us the out-of-the method, After that I developed controller class by using annotation restcontroller where I have developed 2 API 1st to get and 
+	  2nd to create a survey form,including crossOrigin concerns.
+	  At last, for Exception in API I have developed a exception class by using ResponseStatus and If any exception caught at runtime then we can throw that
+
+Tools and Tecnology used: Spring-boot,sql,Angular,bootstrap
+
+api's are: 1)Get: http://localhost:8080/api/v1/happy
+	   2)Post: http://localhost:8080/api/v1/happy
+
+dependencies: spring web,JPA,lombok,mysql
